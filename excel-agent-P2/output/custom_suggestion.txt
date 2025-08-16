@@ -1,0 +1,1 @@
+I want to join the first 2 tables in a full outer join manner

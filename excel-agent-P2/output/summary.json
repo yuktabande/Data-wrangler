@@ -1,0 +1,446 @@
+{
+    "Data till": {
+        "rows": 1,
+        "columns": 1,
+        "column_names": [
+            "Data till"
+        ],
+        "null_counts": {
+            "Data till": 0
+        },
+        "dtypes": {
+            "Data till": "datetime64[ns]"
+        }
+    },
+    "Qlik1": {
+        "rows": 84,
+        "columns": 4,
+        "column_names": [
+            "Division",
+            "Month",
+            "Sales achieved (Rs)",
+            "Sales target (Rs)"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Month": 0,
+            "Sales achieved (Rs)": 0,
+            "Sales target (Rs)": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "Month": "object",
+            "Sales achieved (Rs)": "float64",
+            "Sales target (Rs)": "float64"
+        }
+    },
+    "MDO Analytics+KisanConnect": {
+        "rows": 12,
+        "columns": 6,
+        "column_names": [
+            "Division",
+            "# of MDOs",
+            "Event per MDO per day",
+            "Liquidation per MDO",
+            "# of unique growers met per MDO",
+            "# of grower details captured in meetings (Call/QR)"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "# of MDOs": 0,
+            "Event per MDO per day": 0,
+            "Liquidation per MDO": 0,
+            "# of unique growers met per MDO": 0,
+            "# of grower details captured in meetings (Call/QR)": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "# of MDOs": "int64",
+            "Event per MDO per day": "float64",
+            "Liquidation per MDO": "float64",
+            "# of unique growers met per MDO": "int64",
+            "# of grower details captured in meetings (Call/QR)": "int64"
+        }
+    },
+    "Saksham query1": {
+        "rows": 545,
+        "columns": 4,
+        "column_names": [
+            "Division",
+            "Event type",
+            "Month",
+            "Planned"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Event type": 0,
+            "Month": 0,
+            "Planned": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "Event type": "object",
+            "Month": "object",
+            "Planned": "int64"
+        }
+    },
+    "Saksham query2": {
+        "rows": 1107,
+        "columns": 4,
+        "column_names": [
+            "Division",
+            "Event type",
+            "Month",
+            "Actual/Achieved"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Event type": 0,
+            "Month": 0,
+            "Actual/Achieved": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "Event type": "object",
+            "Month": "int64",
+            "Actual/Achieved": "int64"
+        }
+    },
+    "Saksham query3": {
+        "rows": 12,
+        "columns": 2,
+        "column_names": [
+            "Division",
+            "# retailers"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "# retailers": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "# retailers": "int64"
+        }
+    },
+    "Sumrudhi query1": {
+        "rows": 12,
+        "columns": 4,
+        "column_names": [
+            "Division",
+            "CountOfRetailers",
+            "Scanning - Innovation (Rs mio)",
+            "Scanning - Value (Rs mio)"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "CountOfRetailers": 0,
+            "Scanning - Innovation (Rs mio)": 0,
+            "Scanning - Value (Rs mio)": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "CountOfRetailers": "int64",
+            "Scanning - Innovation (Rs mio)": "int64",
+            "Scanning - Value (Rs mio)": "int64"
+        }
+    },
+    "Table1": {
+        "rows": 131,
+        "columns": 7,
+        "column_names": [
+            "Brand",
+            "Indication",
+            "Portfolio",
+            "Segment",
+            "GP Category",
+            "NNR",
+            "Product Manager"
+        ],
+        "null_counts": {
+            "Brand": 0,
+            "Indication": 0,
+            "Portfolio": 0,
+            "Segment": 0,
+            "GP Category": 0,
+            "NNR": 1,
+            "Product Manager": 5
+        },
+        "dtypes": {
+            "Brand": "object",
+            "Indication": "object",
+            "Portfolio": "object",
+            "Segment": "object",
+            "GP Category": "object",
+            "NNR": "object",
+            "Product Manager": "object"
+        }
+    },
+    "Table2": {
+        "rows": 39,
+        "columns": 5,
+        "column_names": [
+            "Division",
+            "Season number",
+            "Season name",
+            "Month start",
+            "Month end"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Season number": 0,
+            "Season name": 0,
+            "Month start": 0,
+            "Month end": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "Season number": "int64",
+            "Season name": "object",
+            "Month start": "int64",
+            "Month end": "int64"
+        }
+    },
+    "YTD Liquidation": {
+        "rows": 2828,
+        "columns": 8,
+        "column_names": [
+            "Division_transform",
+            "Brand",
+            "Yearmonth",
+            "Liquidation Actual Volume (KL / MT)",
+            "Liquidation Target Volume (KL / MT)",
+            "Year",
+            "Month",
+            "Division"
+        ],
+        "null_counts": {
+            "Division_transform": 0,
+            "Brand": 0,
+            "Yearmonth": 0,
+            "Liquidation Actual Volume (KL / MT)": 0,
+            "Liquidation Target Volume (KL / MT)": 0,
+            "Year": 0,
+            "Month": 0,
+            "Division": 0
+        },
+        "dtypes": {
+            "Division_transform": "object",
+            "Brand": "object",
+            "Yearmonth": "int64",
+            "Liquidation Actual Volume (KL / MT)": "float64",
+            "Liquidation Target Volume (KL / MT)": "float64",
+            "Year": "int64",
+            "Month": "int64",
+            "Division": "object"
+        }
+    },
+    "Saksham query4": {
+        "rows": 557,
+        "columns": 7,
+        "column_names": [
+            "Division",
+            "Event type",
+            "Month",
+            "Planned",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "This data is for TM"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Event type": 0,
+            "Month": 0,
+            "Planned": 0,
+            "Unnamed: 4": 557,
+            "Unnamed: 5": 557,
+            "This data is for TM": 557
+        },
+        "dtypes": {
+            "Division": "object",
+            "Event type": "object",
+            "Month": "object",
+            "Planned": "int64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "This data is for TM": "float64"
+        }
+    },
+    "Saksham query5": {
+        "rows": 513,
+        "columns": 7,
+        "column_names": [
+            "Division",
+            "Event type",
+            "Month",
+            "Actual/Achieved",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "This data is for TM"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Event type": 0,
+            "Month": 0,
+            "Actual/Achieved": 0,
+            "Unnamed: 4": 513,
+            "Unnamed: 5": 513,
+            "This data is for TM": 513
+        },
+        "dtypes": {
+            "Division": "object",
+            "Event type": "object",
+            "Month": "int64",
+            "Actual/Achieved": "int64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "This data is for TM": "float64"
+        }
+    },
+    "Mapping": {
+        "rows": 31,
+        "columns": 6,
+        "column_names": [
+            "EventType",
+            "Type of activity",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Month",
+            "Month num"
+        ],
+        "null_counts": {
+            "EventType": 0,
+            "Type of activity": 0,
+            "Unnamed: 2": 31,
+            "Unnamed: 3": 31,
+            "Month": 23,
+            "Month num": 23
+        },
+        "dtypes": {
+            "EventType": "object",
+            "Type of activity": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Month": "object",
+            "Month num": "float64"
+        }
+    },
+    "Table3": {
+        "rows": 45,
+        "columns": 4,
+        "column_names": [
+            "Division",
+            "Season number",
+            "Season name",
+            "Crop"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Season number": 0,
+            "Season name": 0,
+            "Crop": 37
+        },
+        "dtypes": {
+            "Division": "object",
+            "Season number": "int64",
+            "Season name": "object",
+            "Crop": "object"
+        }
+    },
+    "Table4": {
+        "rows": 120,
+        "columns": 2,
+        "column_names": [
+            "Crop",
+            "Brand"
+        ],
+        "null_counts": {
+            "Crop": 0,
+            "Brand": 1
+        },
+        "dtypes": {
+            "Crop": "object",
+            "Brand": "object"
+        }
+    },
+    "Rabi Liquidation": {
+        "rows": 5584,
+        "columns": 8,
+        "column_names": [
+            "Division_transform",
+            "Brand",
+            "Yearmonth",
+            "Liquidation Actual Volume (KL / MT)",
+            "Liquidation Target Volume (KL / MT)",
+            "Year",
+            "Month",
+            "Division"
+        ],
+        "null_counts": {
+            "Division_transform": 0,
+            "Brand": 0,
+            "Yearmonth": 0,
+            "Liquidation Actual Volume (KL / MT)": 0,
+            "Liquidation Target Volume (KL / MT)": 0,
+            "Year": 0,
+            "Month": 0,
+            "Division": 0
+        },
+        "dtypes": {
+            "Division_transform": "object",
+            "Brand": "object",
+            "Yearmonth": "int64",
+            "Liquidation Actual Volume (KL / MT)": "float64",
+            "Liquidation Target Volume (KL / MT)": "float64",
+            "Year": "int64",
+            "Month": "int64",
+            "Division": "object"
+        }
+    },
+    "Qlik2": {
+        "rows": 0,
+        "columns": 4,
+        "column_names": [
+            "Division",
+            "Brand",
+            "Sales achieved",
+            "Sales target"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Brand": 0,
+            "Sales achieved": 0,
+            "Sales target": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "Brand": "object",
+            "Sales achieved": "object",
+            "Sales target": "object"
+        }
+    },
+    "Warroom": {
+        "rows": 0,
+        "columns": 5,
+        "column_names": [
+            "Division",
+            "Brand",
+            "Liquidation achieved PY",
+            "Liquidation achieved CY",
+            "Liquidation target"
+        ],
+        "null_counts": {
+            "Division": 0,
+            "Brand": 0,
+            "Liquidation achieved PY": 0,
+            "Liquidation achieved CY": 0,
+            "Liquidation target": 0
+        },
+        "dtypes": {
+            "Division": "object",
+            "Brand": "object",
+            "Liquidation achieved PY": "object",
+            "Liquidation achieved CY": "object",
+            "Liquidation target": "object"
+        }
+    }
+}
