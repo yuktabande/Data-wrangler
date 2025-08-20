@@ -1,15 +1,18 @@
-1. **Data Quality Check: Missing Values:** Check for missing values in columns "NNR" (Table1) and "Product Manager" (Table1), "Crop" (Table3), and "Brand" (Table4).  Impute or remove rows as appropriate based on the nature of the missing data.
+1. **Data Quality Check: Missing Values:** Check for missing values in `Table1` (columns "NNR" and "Product Manager") and `Table4` (column "Brand").  Impute missing values or remove rows as appropriate.  Also check for missing values in `Mapping` (columns "Month" and "Month num").
 
-2. **Data Cleaning: Inconsistent Month Names:** Standardize month names across all sheets (e.g., "January" instead of "JANUARY").  Use a mapping table or a consistent formatting function.
+2. **Data Cleaning:  Standardize Month Names:** In sheets "Qlik1", "Saksham query1", and "Saksham query4", standardize month names (e.g., "Jan" to "January").  Use a mapping table if necessary.
 
-3. **Join Operations: Sales and MDO Data:** Join "Qlik1" and "MDO Analytics+KisanConnect" on "Division" to analyze the relationship between sales performance and MDO activities.
+3. **Join Operations:**
+    * Join `Qlik1` and `MDO Analytics+KisanConnect` on "Division" to analyze sales performance against MDO activities.
+    * Join `Saksham query1` and `Saksham query2` on "Division", "Event type", and "Month" (after cleaning month data) to compare planned vs. actual event outcomes.
+    * Join `YTD Liquidation` and `Rabi Liquidation` with `Table1` on "Brand" to analyze liquidation volume by brand and division.
 
-4. **Join Operations: Saksham Events:** Join "Saksham query1" (Planned) and "Saksham query2" (Actual/Achieved) with "Saksham query5" on "Division", "Event type", and "Month" to compare planned vs. actual event performance.  Clean and standardize "Month" column first.
+4. **Data Aggregation: Pivot Table:** Create a pivot table from `Qlik1` with "Division" as rows, "Month" as columns, and "Sales achieved (Rs)" and "Sales target (Rs)" as values to summarize sales data by division and month.
 
-5. **Join Operations: Liquidation and Brand Details:** Join "YTD Liquidation" and "Rabi Liquidation" with "Table1" on "Brand" and "Division" (or "Division_transform") to get detailed brand information alongside liquidation data.
+5. **Data Aggregation: Summarize Saksham Data:**  Aggregate `Saksham query4` and `Saksham query5` (after removing unnecessary columns) by "Division", "Event type", and "Month" to get total planned and achieved values for each event type.
 
-6. **Pivot Table: Sales Performance:** Create a pivot table from "Qlik1" with "Division" as rows, "Month" as columns, and "Sales achieved (Rs)" and "Sales target (Rs)" as values to summarize sales performance by division and month.
+6. **Outlier Check:** Analyze "Liquidation Actual Volume (KL / MT)" and "Liquidation Target Volume (KL / MT)" in "YTD Liquidation" and "Rabi Liquidation" for outliers using box plots or scatter plots. Investigate any significant deviations.
 
-7. **Visualization: Sales Trend:** Create a line chart from the pivot table in step 6 to visualize the sales trends over time for each division.
+7. **Visualization: Sales Trend:** Create a line chart from the pivot table in step 4 to visualize sales trends over time for each division.
 
-8. **Outlier Check: Liquidation Data:** Analyze "YTD Liquidation" and "Rabi Liquidation" for outliers in "Liquidation Actual Volume (KL / MT)" and "Liquidation Target Volume (KL / MT)" using box plots or scatter plots. Investigate any significant deviations.  Consider using a log transformation if data is heavily skewed.
+8. **Data Enrichment:** Join `Table2` and `Table3` on "Division" and "Season number" to add crop information to seasonal data.  Then join the result with `Table4` on "Crop" to link crops to brands.

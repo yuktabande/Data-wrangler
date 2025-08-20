@@ -1,0 +1,65 @@
+{
+    "Sales": {
+        "rows": 5,
+        "columns": 4,
+        "column_names": [
+            "OrderID",
+            "CustomerID",
+            "Date",
+            "Amount"
+        ],
+        "null_counts": {
+            "OrderID": 0,
+            "CustomerID": 0,
+            "Date": 0,
+            "Amount": 0
+        },
+        "dtypes": {
+            "OrderID": "int64",
+            "CustomerID": "object",
+            "Date": "datetime64[ns]",
+            "Amount": "int64"
+        }
+    },
+    "Customers": {
+        "rows": 5,
+        "columns": 4,
+        "column_names": [
+            "CustomerID",
+            "Name",
+            "Region",
+            "Age"
+        ],
+        "null_counts": {
+            "CustomerID": 0,
+            "Name": 0,
+            "Region": 0,
+            "Age": 0
+        },
+        "dtypes": {
+            "CustomerID": "object",
+            "Name": "object",
+            "Region": "object",
+            "Age": "int64"
+        }
+    },
+    "Returns": {
+        "rows": 2,
+        "columns": 3,
+        "column_names": [
+            "ReturnID",
+            "OrderID",
+            "Reason"
+        ],
+        "null_counts": {
+            "ReturnID": 0,
+            "OrderID": 0,
+            "Reason": 0
+        },
+        "dtypes": {
+            "ReturnID": "object",
+            "OrderID": "int64",
+            "Reason": "object"
+        }
+    }
+}

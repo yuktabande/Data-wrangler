@@ -1,0 +1,15 @@
+1. **Join Sales & Customers:** Join the `Sales` and `Customers` sheets on `CustomerID` to add customer details (Name, Region, Age) to the sales data.
+
+2. **Join Sales & Returns:** Perform a left join of the `Sales` sheet with the `Returns` sheet using `OrderID` to understand which sales resulted in returns and the reasons for return.
+
+3. **Check for Duplicate Orders:** Check the `Sales` sheet for duplicate `OrderID` values to ensure data integrity.
+
+4. **Check for Missing Values:** Verify if there are any missing values across all three sheets.  Focus on key columns like `OrderID`, `CustomerID`, and `Amount` in the `Sales` sheet.
+
+5. **Calculate Total Sales per Customer:**  Group the joined `Sales` and `Customers` data by `CustomerID` and calculate the sum of `Amount` to find the total sales for each customer.
+
+6. **Sales Over Time:** Create a line chart visualizing `Amount` over `Date` from the `Sales` sheet to show sales trends.
+
+7. **Sales by Region:** Create a bar chart showing total sales (`Amount`) grouped by `Region` from the joined `Sales` and `Customers` data to identify regional sales performance.
+
+8. **Return Reason Analysis:** Create a bar chart or pie chart showing the frequency of different `Reason` values from the `Returns` sheet to understand the main causes of returns.
