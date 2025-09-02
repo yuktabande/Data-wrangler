@@ -420,7 +420,7 @@ We welcome contributions! Please see our contributing guidelines:
 
 ```bash
 # Fork and clone
-git clone <your-fork>
+git clone https://github.com/yuktabande/Data-wrangler
 cd excel-agent
 
 # Create development branch
@@ -455,7 +455,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 **Email**: [your-email@domain.com]
+- 📧 **Email**: [yuktaabande@gmail.com]
 - 💬 **Issues**: [GitHub Issues](https://github.com/yuktabande/excel-agent/issues)
 - 📖 **Documentation**: [Wiki](https://github.com/yuktabande/excel-agent/wiki)
 - 🎯 **Discussions**: [GitHub Discussions](https://github.com/yuktabande/excel-agent/discussions)
