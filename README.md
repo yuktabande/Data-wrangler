@@ -104,7 +104,7 @@ excel-agent/
 │   ├── loader.py           # Phase 1: Excel file analysis
 │   └── suggestions.py      # Phase 2: AI suggestion generation
 ├── 📂 data/
-│   └── Input+metadata.xlsx # Your input Excel file
+│   └── Input.xlsx # Your input Excel file
 ├── 📂 output/              # Generated results
 │   ├── summary.json       # Data analysis results
 │   ├── suggestions.txt    # AI recommendations
