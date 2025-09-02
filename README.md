@@ -86,7 +86,7 @@ graph LR
 
    ```bash
    # Place your Excel file in the data directory
-   cp your_file.xlsx data/Input+metadata.xlsx
+   cp your_file.xlsx data/Input.xlsx
    ```
 
 5. **Run the agent**
