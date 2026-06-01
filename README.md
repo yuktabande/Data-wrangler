@@ -1,7 +1,6 @@
 # 🤖 Excel Agent - Autonomous Excel Analyst & Automation Assistant
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Active](https://img.shields.io/badge/Status-Active-green.svg)]()
 
 An intelligent AI agent that serves as your **Excel Copilot**, capable of understanding, analyzing, and automating complex Excel operations through natural language instructions.
