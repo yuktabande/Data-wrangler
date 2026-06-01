@@ -1,65 +1,137 @@
 {
-    "Sales": {
-        "rows": 5,
-        "columns": 4,
+    "Raw_Data": {
+        "rows": 10,
+        "columns": 9,
         "column_names": [
-            "OrderID",
-            "CustomerID",
+            "Record_ID",
             "Date",
-            "Amount"
-        ],
-        "null_counts": {
-            "OrderID": 0,
-            "CustomerID": 0,
-            "Date": 0,
-            "Amount": 0
-        },
-        "dtypes": {
-            "OrderID": "int64",
-            "CustomerID": "object",
-            "Date": "datetime64[ns]",
-            "Amount": "int64"
-        }
-    },
-    "Customers": {
-        "rows": 5,
-        "columns": 4,
-        "column_names": [
-            "CustomerID",
-            "Name",
+            "Customer_ID",
+            "Product",
+            "Category",
             "Region",
-            "Age"
+            "Quantity",
+            "Unit_Price",
+            "Revenue"
         ],
         "null_counts": {
-            "CustomerID": 0,
-            "Name": 0,
+            "Record_ID": 0,
+            "Date": 0,
+            "Customer_ID": 0,
+            "Product": 0,
+            "Category": 0,
             "Region": 0,
-            "Age": 0
+            "Quantity": 0,
+            "Unit_Price": 0,
+            "Revenue": 0
         },
         "dtypes": {
-            "CustomerID": "object",
-            "Name": "object",
-            "Region": "object",
-            "Age": "int64"
+            "Record_ID": "int64",
+            "Date": "str",
+            "Customer_ID": "str",
+            "Product": "str",
+            "Category": "str",
+            "Region": "str",
+            "Quantity": "int64",
+            "Unit_Price": "int64",
+            "Revenue": "int64"
         }
     },
-    "Returns": {
-        "rows": 2,
-        "columns": 3,
+    "Cleaned_Data": {
+        "rows": 10,
+        "columns": 7,
         "column_names": [
-            "ReturnID",
-            "OrderID",
-            "Reason"
+            "Date",
+            "Month",
+            "Quarter",
+            "Product",
+            "Category",
+            "Region",
+            "Revenue"
         ],
         "null_counts": {
-            "ReturnID": 0,
-            "OrderID": 0,
-            "Reason": 0
+            "Date": 0,
+            "Month": 10,
+            "Quarter": 10,
+            "Product": 0,
+            "Category": 0,
+            "Region": 0,
+            "Revenue": 0
         },
         "dtypes": {
-            "ReturnID": "object",
-            "OrderID": "int64",
-            "Reason": "object"
+            "Date": "str",
+            "Month": "float64",
+            "Quarter": "float64",
+            "Product": "str",
+            "Category": "str",
+            "Region": "str",
+            "Revenue": "int64"
+        }
+    },
+    "KPI_Dashboard": {
+        "rows": 3,
+        "columns": 2,
+        "column_names": [
+            "Metric",
+            "Value"
+        ],
+        "null_counts": {
+            "Metric": 0,
+            "Value": 3
+        },
+        "dtypes": {
+            "Metric": "str",
+            "Value": "float64"
+        }
+    },
+    "Monthly_Trends": {
+        "rows": 0,
+        "columns": 0,
+        "column_names": [],
+        "null_counts": {},
+        "dtypes": {}
+    },
+    "Region_Analysis": {
+        "rows": 0,
+        "columns": 0,
+        "column_names": [],
+        "null_counts": {},
+        "dtypes": {}
+    },
+    "Product_Performance": {
+        "rows": 0,
+        "columns": 0,
+        "column_names": [],
+        "null_counts": {},
+        "dtypes": {}
+    },
+    "Customer_Analysis": {
+        "rows": 0,
+        "columns": 0,
+        "column_names": [],
+        "null_counts": {},
+        "dtypes": {}
+    },
+    "Pivot_Tables": {
+        "rows": 0,
+        "columns": 0,
+        "column_names": [],
+        "null_counts": {},
+        "dtypes": {}
+    },
+    "Data_Dictionary": {
+        "rows": 3,
+        "columns": 2,
+        "column_names": [
+            "Column",
+            "Description"
+        ],
+        "null_counts": {
+            "Column": 0,
+            "Description": 0
+        },
+        "dtypes": {
+            "Column": "str",
+            "Description": "str"
         }
     }
 }

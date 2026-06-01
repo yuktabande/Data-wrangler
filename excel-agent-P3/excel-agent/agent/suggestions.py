@@ -2,11 +2,19 @@
 import os
 import json
 import textwrap
-import google.generativeai as genai
 from config import GOOGLE_API_KEY
+
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 
 # Configure Gemini once per process
 def _configure():
+    if genai is None:
+        raise RuntimeError(
+            "google-generativeai is not installed. Install requirements.txt to enable AI suggestions."
+        )
     api_key = GOOGLE_API_KEY
     if not api_key:
         raise RuntimeError(

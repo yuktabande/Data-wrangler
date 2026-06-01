@@ -440,7 +440,6 @@ pytest tests/
 - 🧪 **Testing**: Increase test coverage
 - 🎨 **UI/UX**: Enhance user experience
 
-
 ## 🙏 Acknowledgments
 
 - **Google Gemini**: AI-powered suggestion engine

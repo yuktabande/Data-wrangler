@@ -1,15 +1,24 @@
 # excel-agent/agent/executor.py
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from typing import Dict, Any, List, Optional, Tuple
 import json
 import re
 import os
 from pathlib import Path
-import google.generativeai as genai
 from config import GOOGLE_API_KEY
+
+try:
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+except ImportError:
+    plt = None
+    sns = None
+
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 
 class TaskExecutor:
     """
@@ -32,8 +41,9 @@ class TaskExecutor:
     
     def _configure_gemini(self):
         """Configure Gemini for instruction parsing"""
-        if not GOOGLE_API_KEY:
-            raise RuntimeError("GOOGLE_API_KEY is not set")
+        self.model = None
+        if not GOOGLE_API_KEY or genai is None:
+            return
         genai.configure(api_key=GOOGLE_API_KEY)
         self.model = genai.GenerativeModel("gemini-1.5-flash")
     
@@ -79,6 +89,8 @@ class TaskExecutor:
         """
         
         try:
+            if self.model is None:
+                return self._fallback_parse(instruction)
             response = self.model.generate_content(prompt)
             # Extract JSON from response
             json_match = re.search(r'\{.*\}', response.text, re.DOTALL)
@@ -96,7 +108,9 @@ class TaskExecutor:
         instruction_lower = instruction.lower()
         
         # Detect action type
-        if any(word in instruction_lower for word in ['join', 'merge', 'combine']):
+        if any(word in instruction_lower for word in ['summary', 'summarize', 'describe', 'overview']):
+            action = "summary"
+        elif any(word in instruction_lower for word in ['join', 'merge', 'combine']):
             action = "merge"
         elif any(word in instruction_lower for word in ['filter', 'where', 'only']):
             action = "filter"
@@ -297,6 +311,12 @@ class TaskExecutor:
     
     def _execute_visualize(self, instruction: Dict[str, Any]) -> Dict[str, Any]:
         """Execute visualization operations"""
+        if plt is None or sns is None:
+            return {
+                "status": "error",
+                "message": "Visualization requires matplotlib and seaborn. Install requirements.txt to enable charts."
+            }
+
         sheets = instruction.get("sheets", [])
         if not sheets:
             return {"status": "error", "message": "No sheets specified"}
