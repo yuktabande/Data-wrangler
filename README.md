@@ -441,9 +441,6 @@ pytest tests/
 - 🧪 **Testing**: Increase test coverage
 - 🎨 **UI/UX**: Enhance user experience
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
